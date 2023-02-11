@@ -2,6 +2,36 @@
   text-align: center;
 }
 
+[data-amplify-authenticator]{
+  background: url("./assets/img.png") no-repeat center center;
+}
+
+[data-amplify-forgot-password]{
+  color: red;
+}
+
+/* --amplify-colors-transparent
+transparent */
+
+:root {
+  --amplify-primary-color: #2cdc78;
+  --amplify-primary-tint: #3f6060;
+  --amplify-primary-shade: #2dba89;
+  --amplify-background-color: #b43b97;
+}
+
+/* .amplify-button {
+  background-color: var(--amplify-colors-brand-primary-60);
+} */
+
+/* .amplify-button[data-variation='primary'] {
+  background: linear-gradient(
+    to top,
+    var(--amplify-colors-brand-primary-100),
+    var(--amplify-colors-neutral-10)
+  );
+} */
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

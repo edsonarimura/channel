@@ -1,12 +1,14 @@
 import logo from "./logo.svg";
 import "@aws-amplify/ui-react/styles.css";
+import "./App.css";
+
 import {
   withAuthenticator,
   Button,
   Heading,
   Image,
   View,
-  Card,
+  Card
 } from "@aws-amplify/ui-react";
 
 function App({ signOut }) {
@@ -21,4 +23,8 @@ function App({ signOut }) {
   );
 }
 
-export default withAuthenticator(App);
+export default withAuthenticator(App, {
+  hideSignUp: true,
+  includeGreetings: true,
+  usernameAttributes: 'email'
+});
